@@ -4,7 +4,6 @@
 [![⚙️ Build Workflow](https://github.com/antoinezanardi/werewolves-assistant-api-next/actions/workflows/build.yml/badge.svg)](https://github.com/antoinezanardi/werewolves-assistant-api-next/actions/workflows/build.yml)
 [![🚀 Deploy To Production Workflow](https://github.com/antoinezanardi/werewolves-assistant-api-next/actions/workflows/deploy-to-production.yml/badge.svg)](https://github.com/antoinezanardi/werewolves-assistant-api-next/actions/workflows/deploy-to-production.yml)
 [![GitHub release](https://img.shields.io/github/v/release/Abblix/Oidc.Server)](#)
-[![ChatGPT](https://img.shields.io/badge/ChatGPT-available-brightgreen.svg?
 
 ⭐ Star us on GitHub — it motivates us a lot!
 
