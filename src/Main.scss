@@ -1,0 +1,266 @@
+
+
+@import './assets/variable.scss';
+.main-section{
+    // background-color: cornflowerblue;
+    color: white;
+    padding: 0rem 3rem;
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    // border: 2px solid green;
+
+    @media only screen and (max-width:$bp-largest){
+        grid-template-columns: 1fr ;
+        padding: 8rem 3rem;
+       
+     }
+
+     @media only screen and (max-width:$bp-largest){
+       padding:0rem 3rem;
+       
+     }
+
+    
+
+
+   
+
+    .main-image{
+        width: 30rem;
+        height: 30rem;
+    }
+    .left-section{
+
+padding: 4rem 0rem;
+text-align: left;
+// border: 2px solid green;
+// background-color: rgba(0, 0, 0, 0.941);
+// backdrop-filter: blur(0px) saturate(200%);
+//     -webkit-backdrop-filter: blur(0px) saturate(200%);
+//     background-color: rgba(17, 25, 40, 0.64);
+//     border-radius: 12px;
+//     border: 1px solid rgba(255, 255, 255, 0.125);
+
+    }
+   
+
+
+
+    .heading{
+margin-bottom: .5rem;
+font-size: 6rem;
+
+    }
+    .heading-name{
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        color: #82CD47;
+    }
+    .heading-two{
+margin-bottom: 5rem;
+font-size: 2.6rem;
+
+    }
+  
+   
+    .quote{
+        // text-align: center;
+        color: gray;
+        font-size: 1.6rem;
+        margin-bottom: 6rem;
+    }
+
+    .btn{
+        backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    padding: 1.5rem 3rem;
+    position: relative;
+    }
+
+
+
+    .btn:hover{
+        background: linear-gradient(90deg , rgba(185, 214, 168, 0.64) , rgba(168, 206, 129, 0.64));
+        
+       
+       }
+       
+       
+       
+       .btn::before{
+           content: ' ';
+           position: absolute;
+           background: inherit;
+           top: -5px;
+           right: -5px;
+           bottom: -5px;
+           left: -5px;
+           filter: blur(30px);
+           opacity: 0;
+           transition: opacity 0.5s;
+       }
+       
+       
+       .btn:hover::before{
+           opacity: 1;
+           z-index: -1;
+         
+       }
+       
+       .btn:hover{
+           z-index: 1;
+           animation: glowcontri 8s linear infinite;
+       }
+       
+       @keyframes glowcontri {
+           0%{
+       background-color: 0%;
+           }
+       
+           100%{
+       background-color: 400%;
+           }
+       }
+       
+
+
+    .right-section{
+        // border: 2px solid red;
+        display: flex;justify-content: center;
+        align-items: center;
+        @media only screen and (max-width:$bp-small){
+            // grid-template-columns: 1fr ;
+            // // padding: 8rem 3rem;
+            // flex-direction: column;
+           
+         }
+      
+    }
+
+    .right-right{
+        display: grid;
+        grid-template-columns: repeat(8 ,1fr);
+        grid-template-rows: repeat(7,6rem);
+        // grid-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width:$bp-small){
+          
+            grid-template-columns: repeat(14 ,1fr);
+            grid-template-rows: repeat(7,6rem);
+            grid-row-gap:2rem ;
+         }
+
+    }
+
+
+    .webdeveloper{
+        padding: 1rem 1rem;
+        text-align: center;
+      font-size: 1.6rem;
+        backdrop-filter: blur(0px) saturate(200%);
+        -webkit-backdrop-filter: blur(0px) saturate(200%);
+        background-color: rgba(97, 117, 155, 0.64);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        display: grid;
+        align-items: left;
+        justify-content: left;
+grid-column: 1 / span 9;
+@media only screen and (max-width:$bp-small){
+    grid-column: 1 / 15;
+    font-size: 1.3rem;
+ }
+    }
+    .Freelancer{
+        padding: 1rem 1rem;
+       
+        backdrop-filter: blur(0px) saturate(200%);
+        -webkit-backdrop-filter: blur(0px) saturate(200%);
+        background-color: rgba(67, 138, 137, 0.64);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        font-size: 1.6rem;
+        display: grid;
+        align-items: left;
+        justify-content: left;
+    
+grid-column: 1 / span 8;
+grid-row: 2 / 3;
+@media only screen and (max-width:$bp-small){
+    grid-column: 1 / 15;
+    font-size: 1.3rem;
+ }
+    }
+
+    .Designer{
+        padding: 1rem 1rem;
+        text-align: center;
+        backdrop-filter: blur(0px) saturate(200%);
+        -webkit-backdrop-filter: blur(0px) saturate(200%);
+        background-color: rgba(73, 168, 123, 0.64);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        font-size: 1.6rem;
+        display: grid;
+        align-items: left;
+        justify-content: left;
+    
+grid-column: 1 / span 10;
+grid-row: 3 / 4;
+
+@media only screen and (max-width:$bp-small){
+    grid-column: 1 / 15;
+    font-size: 1.3rem;
+ }
+    }
+
+    .Contentcreator{
+        padding: 1rem 1rem;
+        text-align: center;
+        backdrop-filter: blur(0px) saturate(200%);
+        -webkit-backdrop-filter: blur(0px) saturate(200%);
+        background-color: rgba(106, 164, 72, 0.64);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        font-size: 1.6rem;
+        display: grid;
+        align-items: left;
+        justify-content: left;
+    
+grid-column: 1 / span 12;
+grid-row: 4 / 5;
+
+
+@media only screen and (max-width:$bp-medium){
+    grid-column: 1 / span 9;
+ }
+
+ @media only screen and (max-width:$bp-small){
+    grid-column: 1 / 15;
+    font-size: 1.3rem;
+ }
+    }
+
+
+    .dot-flex{
+        display: flex;
+       
+    }
+    .dot{
+        width: 4rem;
+        height: rem;
+        border-radius: 50%;
+        background-color:red ;
+        margin: 2rem;
+    }
+}
+
+
+

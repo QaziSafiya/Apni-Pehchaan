@@ -1,0 +1,106 @@
+
+@import './assets/variable.scss';
+.skills{
+
+    // border: 2px solid greenyellow;
+color: white;
+padding: 6rem 3rem;
+
+.skills-heading{
+
+margin-bottom: 6rem;
+
+}
+.skillset{
+    // border: 2px solid rgb(193, 233, 134); 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3 ,1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+
+    @media only screen and (max-width:$bp-largest){
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4 ,1fr);
+   
+        
+     }
+
+     @media only screen and (max-width:$bp-medium){
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3 ,1fr);
+     }
+}
+.skill-container{
+
+box-shadow: 0rem 2em 3rem rgba(58, 55, 55, 0.3);
+position: relative;
+margin: 4rem;
+
+background-color: rgba(0, 0, 0, 0.941);
+backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.64);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+}
+
+
+.skill-container:hover{
+ background: linear-gradient(90deg , rgba(185, 214, 168, 0.64) , rgba(150, 160, 155, 0.64));
+ 
+
+}
+
+
+
+.skill-container::before{
+    content: ' ';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    filter: blur(30px);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+.skill-container:hover::before{
+    opacity: 1;
+    z-index: -1;
+  
+}
+
+.skill-container:hover{
+    z-index: 1;
+    animation: glowcontri 8s linear infinite;
+}
+
+@keyframes glowcontri {
+    0%{
+background-color: 0%;
+    }
+
+    100%{
+background-color: 400%;
+    }
+}
+
+.skill-img{
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+  
+}
+
+
+
+
+}

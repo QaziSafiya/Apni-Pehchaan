@@ -1,0 +1,39 @@
+.footer{
+  
+    color: white;
+   margin-top: 4rem;
+
+    .footer-heading{
+        margin-bottom:3rem;
+    }
+
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 3rem;
+    }
+    .instagram{
+        margin-right: 2rem;
+
+    }
+    .twitter{
+        margin-right: 2rem;
+    }
+    .github{
+        margin-right: 2rem;
+    }
+    .linkedin{
+        margin-right: 2rem;
+    }
+    .icons{
+        width: 4rem;
+        height: 4rem;
+        color: white;
+    }
+.last-heading{
+    font-size: 1rem;
+}
+
+    
+}

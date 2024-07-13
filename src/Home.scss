@@ -1,0 +1,22 @@
+
+
+@import './assets/variable.scss';
+.container{
+    max-width: 100%;
+    // background-color: black;
+    // background: url("https://getwallpapers.com/wallpaper/full/1/7/b/15295.jpg");
+    margin: 0rem auto;
+    box-shadow: 0rem 2rem 3rem rgb(0,0,0,0.3);
+    min-height: 50rem;
+
+    background-color: #111927;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162, 66%, 22%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+    
+
+        // @media only screen and (max-width:$bp-largest){
+        //    margin: 0;
+        //    max-width: 100%;
+        //    }
+}
